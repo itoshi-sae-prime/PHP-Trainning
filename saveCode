@@ -1,0 +1,38 @@
+// Them vao database
+<!-- <input id="id" placeholder="id" spellcheck="true" type="text">
+    <input id="name" placeholder="name" spellcheck="true" type="text">
+    <input id="img" placeholder="img" spellcheck="false" type="file">
+    <input id="price" placeholder="price" spellcheck="true" type="text">
+    <button id="then">tạo</button>
+    <br></br>
+    <button>LoadSP</button>
+    <table id="pro"></table>
+    <script>
+        $(function () {
+            $("#then").click(function (e) {
+                e.preventDefault();
+                var id = $("#id").val();
+                var name = $("#name").val();
+                var img = $("#img").val();
+                var price = $("#price").val();
+                $.ajax({
+                    type: "GET",
+                    url: "index.php",
+                    data: {
+                        "id": id,
+                        "name": name,
+                        "img": img,
+                        "price": price,
+                    },
+                    dataType: "json",
+                    success: function (response) {
+                        var kq = "";
+                        response.forEach(sp => {
+                            kq += "<tr><td>" + sp['id'] + "</td><td>" + sp['name'] + "</td><td>" + sp['img'] + "</td><td>" + sp['price'] + "</td></tr>";
+                        });
+                        $("#pro").html(kq);
+                    },
+                });
+            });
+        });
+    </script> -->
